@@ -29,7 +29,7 @@ pipeline {
          stage("mvn deploy ") {
             steps {
                 script {
-                    sh "mvn deploy"
+                    sh "clean deploy -Dmaven.test.skip=true"
                 }
             }
         }
