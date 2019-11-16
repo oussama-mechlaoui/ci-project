@@ -8,7 +8,7 @@ pipeline {
             steps {
                 script {
                     // Let's clone the source
-                    git 'git@gitlab.com:oussama.mechlaoui/continuous-integration-project.git';
+                    git 'https://github.com/oussama-mechlaoui/ci-project';
                 }
             }
         }
