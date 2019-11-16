@@ -12,7 +12,7 @@ pipeline {
                 }
             }
         }
-        stage("mvn z build") {
+        stage("mvn build") {
             steps {
                 script {
                     sh "mvn package -DskipTests=true"
